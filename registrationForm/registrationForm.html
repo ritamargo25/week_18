@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div>
+    <h1>Регистрация</h1>
+    <form>
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" id="name" required />*
+        </div>
+
+        <div>
+            <label for="fio">Фамилия</label>
+            <input type="text" id="fio" required />*
+        </div>
+        <div>
+            <label for="login">Придумайте логин</label>
+            <input type="text" id="login" required />*
+        </div>
+        <fieldset>
+            <legend>Пароли</legend>
+            <div>
+                <label for="password">Придумайте пароль</label>
+                <input type="password" id="password" required />*
+            </div>
+            <div>
+                <label for="password">Повторите пароль</label>
+                <input type="password" id="password" required />*
+        </fieldset>
+</div>
+<label for="phone">Номер мобильного телефона</label>
+<input type="tel" id="phone" pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/" minlength="10"
+    maxlength="20" required />*
+</div>
+<br>
+<label for="name">Укажите ваш пол</label><br />
+Женский <input type="radio" name="sex" /> <br /> Мужской <input type="radio" name="sex" />
+</div>
+<div>
+    <button>Зарегистрироваться</button>
+</div>
+<div>Нажимая кнопку "Зарегистрироваться"
+    <input type="checkbox" required>* Я принимаю условия <a href="...">Пользовательское соглашение</a>
+</div>
+</form>
+</body>
+
+</html>
